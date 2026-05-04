@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #101318;
+  --card: #FFFFFF;
+  --popover: #FFFFFF;
+  --primary: #FFB700;
+  --secondary: #F3F4F6;
+  --muted: #F3F4F6;
+  --accent: #00A36D;
+  --destructive: #EF4343;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --chart-1: #FFB700;
+  --chart-2: #00A36D;
+  --chart-3: #2662D9;
+  --chart-4: #AF57DB;
+  --chart-5: #E23670;
+  --card-foreground: #101318;
+  --popover-foreground: #101318;
+  --primary-foreground: #101318;
+  --muted-foreground: #6B7280;
+  --secondary-foreground: #101318;
+  --accent-foreground: #FFFFFF;
+  --destructive-foreground: #FAFAFA;
+  --ring: #FFB700;
+  --sidebar-background: #FFFFFF;
+  --sidebar-foreground: #101318;
+  --sidebar-primary: rgb(17, 19, 22);
+  --sidebar-primary-foreground: #101318;
+  --sidebar-accent: #F3F4F6;
+  --sidebar-accent-foreground: #101318;
+  --sidebar-border: #E5E7EB;
+  --sidebar-foreground: #FAFAFA;
+  --sidebar-ring: #FFB700;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card: #FFFFFF;
+    --popover: #FFFFFF;
+    --primary: #FFB700;
+    --secondary: ;
+    --muted: #F3F4F6;
+    --accent: #00A36D;
+    --destructive: #EF4343;
+    --border: #E5E7EB;
+    --input: #E5E7EB;
+    --chart-1: #FFB700;
+    --chart-2: #00A36D;
+    --chart-3: #2662D9;
+    --chart-4: #AF57DB;
+    --chart-5: #E23670;
+    --card-foreground: #101318;
+    --popover-foreground: #101318;
+    --primary-foreground: #101318;
+    --muted-foreground: #6B7280;
+    --secondary-foreground: #101318;
+    --accent-foreground: #FFFFFF;
+    --destructive-foreground: #FAFAFA;
+    --ring: #FFB700;
+    --sidebar-background: #FFFFFF;
+    --sidebar-foreground: #101318;
+    --sidebar-primary: rgb(17, 19, 22);
+    --sidebar-primary-foreground: #101318;
+    --sidebar-accent: #F3F4F6;
+    --sidebar-accent-foreground: #101318;
+    --sidebar-border: #E5E7EB;
+    --sidebar-foreground: #FAFAFA;
+    --sidebar-ring: #FFB700;
+
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
