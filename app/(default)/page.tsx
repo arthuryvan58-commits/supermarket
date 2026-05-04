@@ -4,7 +4,7 @@ import CategoryGrid from "../components/home/category-grid";
 import FeaturedProducts from "../components/home/featured-products";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { useEffect, useMemo } from "react";
-// import { fetchCategories } from "@/store/categories/slice";
+// import { fetchCategories } from "@/store/categories/slice"; 
 import { fetchProducts } from "@/store/product/slice";
 import { addToCart, removeFromCart, updateCartQuantity } from "@/store/cart/slice";
 import { Product } from "@/models/product";
