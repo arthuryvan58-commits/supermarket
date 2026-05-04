@@ -31,14 +31,14 @@ export function addToCart(product: Product, quantity = 1) {
 
 export function updateCartQuantity(productId: string, quantity: number) {
     let cart = getCart();
-    if (quantity <= 0) {
-        cart = cart.filter(item => item.productId !== productId);
-    } else {
-        const item = cart.find(item => item.productId === productId);
-        if (item) item.quantity = quantity;
-    }
-    localStorage.setItem(CART_KEY, JSON.stringify(cart));
-    window.dispatchEvent(new Event('cart-updated'));
+    // if (quantity <= 0) {
+    //     cart = cart.filter(item => item.productId !== productId);
+    // } else {
+    //     const item = cart.find(item => item.productId === productId);
+    //     if (item) item.quantity = quantity;
+    // }
+    // localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    // window.dispatchEvent(new Event('cart-updated'));
     return cart;
 }
 
