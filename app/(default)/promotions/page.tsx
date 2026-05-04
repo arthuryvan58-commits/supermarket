@@ -90,7 +90,7 @@ export default function Promotions() {
             ) : (
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {filtered.map(product => (
-                        <ProductCard key={product.pk} product={product} onAdd={function (): void {
+                        <ProductCard key={product.id} product={product} onAdd={function (): void {
                             throw new Error('Function not implemented.');
                         } } />
                     ))}
