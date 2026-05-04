@@ -43,7 +43,8 @@ export function updateCartQuantity(productId: string, quantity: number) {
 }
 
 export function removeFromCart(productId: string) {
-    const cart = getCart().filter(item => item.productId !== productId);
+    const cart = getCart()
+        // .filter(item => item.productId !== productId);
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
     window.dispatchEvent(new Event('cart-updated'));
     return cart;
