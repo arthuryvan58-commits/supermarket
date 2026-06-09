@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL + "api/", // L'URL de votre backend Django
+    baseURL: "https://51.68.124.152/erp/api/", // L'URL de votre backend Django
 });
 
 export default api;
